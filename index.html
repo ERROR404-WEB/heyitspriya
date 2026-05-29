@@ -1240,6 +1240,11 @@
         padding: 5rem 1.2rem 2.5rem
       }
 
+      .hero-tag {
+        font-size: 0.65rem;
+        padding: 0.4rem 0.8rem;
+      }
+
       .hero-name {
         font-size: 3.2rem
       }
@@ -1309,6 +1314,12 @@
         height: 280px
       }
 
+      .viral-stats {
+        gap: 1.2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
       .brands-grid {
         grid-template-columns: repeat(2, 1fr)
       }
@@ -1336,6 +1347,22 @@
       .sec-title {
         font-size: 2rem
       }
+
+      /* Make overlays and titles fully visible on mobile/touch screens by default */
+      .g-overlay {
+        opacity: 1 !important;
+        background: linear-gradient(180deg, transparent 30%, rgba(45, 34, 53, 0.9) 100%) !important;
+      }
+      .g-icon {
+        opacity: 1 !important;
+      }
+      .reel-thumb .r-overlay {
+        opacity: 1 !important;
+        background: linear-gradient(180deg, transparent 30%, rgba(45, 34, 53, 0.92) 100%) !important;
+      }
+      .reel-thumb .r-play {
+        transform: translate(-50%, -50%) scale(1) !important;
+      }
     }
 
     @media(max-width:480px) {
@@ -1352,11 +1379,35 @@
       }
 
       .gallery-grid {
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 1fr
       }
 
       .stats-grid {
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 1fr
+      }
+
+      .reels-grid {
+        grid-template-columns: 1fr
+      }
+
+      /* Shrink hero photos to avoid overflow on narrow screens */
+      .hp-main {
+        width: 110px;
+        height: 155px
+      }
+
+      .hp-side {
+        width: 85px;
+        height: 120px
+      }
+
+      .hero-photos {
+        gap: 0.4rem
+      }
+
+      .viral-stats {
+        gap: 1rem;
+        justify-content: space-around;
       }
     }
   </style>
