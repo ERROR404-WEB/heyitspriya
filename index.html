@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TJ36ED02ET"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-TJ36ED02ET');
+</script>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1236,6 +1246,7 @@
 
     /* MOBILE */
     @media(max-width:768px) {
+
       /* Disable 3D transforms on mobile to prevent layout overflow and perspective distortion */
       .fi-3d {
         opacity: 0;
@@ -1390,13 +1401,16 @@
         opacity: 1 !important;
         background: linear-gradient(180deg, transparent 30%, rgba(45, 34, 53, 0.9) 100%) !important;
       }
+
       .g-icon {
         opacity: 1 !important;
       }
+
       .reel-thumb .r-overlay {
         opacity: 1 !important;
         background: linear-gradient(180deg, transparent 30%, rgba(45, 34, 53, 0.92) 100%) !important;
       }
+
       .reel-thumb .r-play {
         transform: translate(-50%, -50%) scale(1) !important;
       }
@@ -1476,11 +1490,12 @@
       background: rgba(253, 246, 240, 0.95);
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
     }
+
     [data-theme="dark"] nav.shrink {
       background: rgba(26, 16, 37, 0.96);
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
     }
-    
+
     @media(max-width:768px) {
       nav.shrink {
         padding: 0.5rem 1.2rem;
@@ -2394,7 +2409,7 @@
         ctx.save();
         ctx.globalAlpha = this.alpha;
         ctx.fillStyle = this.color + this.alpha + ')';
-        
+
         // Add subtle shadow glow
         ctx.shadowBlur = this.size * 2;
         ctx.shadowColor = this.color + '0.5)';
@@ -2484,7 +2499,7 @@
     window.addEventListener('scroll', () => {
       const scrolled = window.pageYOffset || document.documentElement.scrollTop;
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-      
+
       // Update progress bar
       if (maxScroll > 0) {
         const percent = (scrolled / maxScroll) * 100;
